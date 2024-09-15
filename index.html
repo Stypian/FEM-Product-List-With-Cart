@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <script src="desertStyles.js"></script>
+  <script src="scripts.js"></script>
+
+  <title>Frontend Mentor | Product list with cart</title>
+</head>
+<body>
+  <main class="prod-list__main">
+    <div class="prod-list__overlay">
+      <div class="prod-list__order-confirm">
+        <div class="prod-list__confirm-inner">
+          <img class="prod-list__confirm-icon" src="assets/images/icon-order-confirmed.svg" alt="order confirmation">
+          <h1 class="prod-list__confirm-h1">Order Confirmed</h1>
+          <p class="prod-list__confirm-p">We hope you enjoy your food!</p>
+          <div class="prod-list__confirm-items"></div>
+          <div class="prod-list__confirmed-total">
+            <p class="prod-list__total-p prod-list__total-p--confirmed">Order Total</p>
+            <p class="prod-list__total-confirmed"></p>
+          </div>
+          <button class="prod-list__new-order">Start New Order</button>
+        </div>
+      </div>
+    </div>
+    <section class="prod-list__cont">
+      <div class="prod-list__prod-half">
+        <header class="prod-list__prod-head">
+          <h1 class="prod-list__head-h1">Desserts</h1>
+        </header>
+        <div class="prod-list__prod-inner"></div>
+      </div> 
+      <div class="prod-list__cart-half">
+        <div class="prod-list__cart">
+          <div class="prod-list__cart-header">
+            <h2 class="prod-list__cart-half-h2">Your Cart <span class="prod-list__cart-count">0</span></h2>
+          </div>
+          <img class="prod-list__cart-image" src="assets/images/illustration-empty-cart.svg" alt="items will appear here">
+          <p class="prod-list__items-note">Your added items will appear here</p>        
+        </div>
+        <div class="prod-list__total-wrap">
+          <p class="prod-list__total-p">Order Total</p>
+          <h2 class="prod-list__total-price"></h2>
+        </div>
+        <div class="prod-list__confirm-wrap">
+          <div class="prod-list__carbon">
+            <img class="prod-list__carbon-icon" src="assets/images/icon-carbon-neutral.svg" alt="carbon neutral delivery">
+            <p class="prod-list__carbon-p">This is a <span class="prod-list__carbon-p prod-list__carbon-span">carbon-neutral</span> delivery</p>
+          </div>
+          <button class="prod-list__confirm">Confirm Order</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Ron L</a>.
+  </div>
+</body>
+</html>
