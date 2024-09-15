@@ -36,7 +36,7 @@ onload = function() {
 
             let cartButtonImg = document.createElement("img");
             cartButtonImg.src = 'assets/images/icon-add-to-cart.svg';
-            cartButtonImg.setAttribute("alt", "add to cart");
+            cartButtonImg.setAttribute("alt", "add " + itemStyles[i].name);
             cartButtonImg.classList.add("prod-list__add-cart");
             cartButton.appendChild(cartButtonImg);
 
